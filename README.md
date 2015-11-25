@@ -1,4 +1,4 @@
-MonteCarlo
-==========
+Data Management and Visualization
 
-Monte Carlo Methods with R
+===========================
+
