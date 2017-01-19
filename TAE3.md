@@ -1,29 +1,30 @@
 Lesson 3: Candidate Generation
-AQL Approach - Step 2
+===================================
+### AQL Approach - Step 2
 We are now ready to begin the second stage of extractor development. This involves
 combining basic features to create more sophisticated views. In the previous stage, we saw an
 extractor that found every occurrence of a number, and another that found numeric scales
 such as million or billion. We can combine these to get a dollar amount. Of course, an amount
 by itself still lacks context. Throughout this lesson we will see tools that can identify what an
 amount represents.
-Lesson Objectives
+### Lesson Objectives
 After completing this lesson, you should be able to list the AQL candidate generation
 components
 and use them to create views.
-Import and Export Statements
+### Import and Export Statements
 At this point, depending on the complexity of the project, you may find yourself with multiple
 modules. To use an object, like a view, dictionary, table, or function, you must include an
 export statement
 in its home module. Then, you import that object
 via the import statement.
-Blocks Specification
+### Blocks Specification
 You can use blocks extraction to identify blocks of contiguous spans across input text. A span
 is just a section of text specified by the position of its start and end characters.
 The 'with count' clause specifies the number of spans that make up the block. This can be an
 absolute number or a range.
 You also specify the acceptable distance between spans for those spans to be considered as
 contiguous. This can be some number of tokens or characters.
-Blocks Example
+### Blocks Example
 Let's look at an example of a blocks extractor. Assume you have already created a view that
 returns all the capitalized words in a document. You would like to find blocks where there are
 two or three capitalized words within 100 characters
@@ -31,7 +32,7 @@ of each other. You create your view, called BlockCapitalWords. The extract block
 specifies a block size of 2 or 3 words, with a separation of 0 to 100 characters. The extraction
 is performed on the existing view, CapitalizedWords. The resulting view will have
 one attribute called capswords containing your blocks.
-Sequence Patterns
+### Sequence Patterns
 Sequence patterns can be used to perform regular expression matching over the document
 text itself, along with annotations extracted from the document. This allows you to write
 complex extraction patterns involving alternation, sequences, and repetitions in a compact
@@ -42,7 +43,7 @@ article on Sequence Patterns in the BigInsights Information Center.
 Here is the basic format of a pattern extractor.
 The return clause functions the same as it does in an extract regex statement. You specify
 which groups to return and what to call them.
-Patterns Example
+### Patterns Example
 At the beginning of this lesson, we saw that during this stage you might want to combine a
 number
 and a numeric scale to create a dollar amount. We can now accomplish this by using
@@ -64,7 +65,7 @@ We assume the Countries and Locations views have already been created. It looks 
 Country name, followed by a latitude longitude pair that is at least five tokens away but not
 more than 35 tokens away.
 
-Union All
+### `Union All`
 The union all operator allows you to combine the tuples from two views as long as the views
 have the same schema. To continue our example of extracting financial information from
 quarterly reports, dollar amounts by themselves are not the only financial indicators of
@@ -74,7 +75,7 @@ our sequence pattern example, and another view that returns percentages. Now, yo
 like a view that returns both. Notice that the same attribute name is used for both views. This
 is what we mean by having the same schemas. Each tuple must have the same number
 of attributes, with the same attribute names.
-The Select Statement
+### The Select Statement
 We have one more statement to cover in this lesson: the select statement. The statement is
 almost the same here as its SQL counterpart. You select a list of columns or attributes from a
 list of views. Optionally you can include a predicate by specifying a where clause. You may also
@@ -90,7 +91,7 @@ they must be qualified with a view name. They can be assigned a local name or al
 example, viewname.colname as localname.
 The select list may include expressions as well. Expressions can be scalar function calls or
 aggregate function calls. It is also possible to specify a case statement as an expression.
-Selecting from a View
+### Selecting from a View
 The select statement allows you to create a view, based on a second view, and apply some
 filter criteria in the form of the 'where' statement. Suppose you have a dictionary,
 FalsePositivesDict, which contains values like 'increased, decreased, up, down.' In the
@@ -102,7 +103,7 @@ The dollar amount and the percentages are returned in the AmountPossibilitesView
 We create a new view. The 'where' clause in the select statement says that we only want
 values where the token to the left of the span is not in the False Positives Dictionary. This
 eliminates our first candidate.
-AQL Built-in Functions
+### AQL Built-in Functions
 AQL has a collection of built-in functions
 which fall into one of three categories.
 Let's go through a few functions from each category. To get a complete list of built-in
@@ -130,7 +131,8 @@ Avg: Returns the average of all input values; returns null of no rows are select
 Count: Returns the number of all input rows.
 Max: Returns the maximum element across all input values or returns null if no rows are
 selected.
-Lesson Summary
+<hr>
+### #Lesson Summary
 This concludes the lesson on candidate generation.
 To recap, you should be familiar with components
 used in candidate generation:
