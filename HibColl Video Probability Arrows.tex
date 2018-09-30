@@ -1,0 +1,176 @@
+\documentclass{beamer}
+
+\usepackage{graphics}
+
+\begin{document}
+
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\begin{itemize}
+\item $P(A)$ : Probability that A hits the target. 
+\[ P(A) = 1/3 \]
+
+\item $P(A^\prime)$ : Probability that A does not hit the target. 
+\[ P(A^\prime) =  1-(1/3) = 2/3 \]
+
+\end{itemize}
+}
+\end{frame}
+
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\begin{itemize}
+
+\item $P(B)$ : Probability that B hits the target. \[ P(B) = 1/5 \]
+\item $P(B^\prime)$ : Probability that B does not hit the target.
+\[ P(B^\prime) =  1-(1/5) = 4/5 \]
+\end{itemize}
+}
+\end{frame}
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 1:}\\
+Probability that both hit the target (i.e both A and B hit the target): 
+\[P(A \cap B) = P(A) \times P(B)  \]\\
+
+
+}
+\end{frame}
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 1:}\\
+Probability that both hit the target (i.e both A and B hit the target): 
+\[P(A \cap B) = P(A) \times P(B)  \]\\
+\[P(A \cap B) \hspace{0.5cm}= {1 \over 3} \times {1 \over 5} \hspace{0.5cm}  = {1 \times 1 \over 3 \times 5} \hspace{0.5cm} = {1 \over 15}  \]
+
+}
+\end{frame}
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 1:}\\
+Probability that both hit the target (i.e both A and B hit the target): 
+\[P(A \cap B) = P(A) \times P(B)  \]\\
+\[P(A \cap B) \hspace{0.5cm}= {1 \over 3} \times {1 \over 5} \hspace{0.5cm}  = {1 \times 1 \over 3 \times 5} \hspace{0.5cm} = {1 \over 15}  \]
+\[P(A \cap B) = {1 \over 15} \]\\
+}
+\end{frame}
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 2:}\\
+Probability that \textbf{neither} hit the target (i.e both A and B miss the target): 
+\[P(A^{\prime} \cap B^{\prime}) = P(A^{\prime}) \times P(B^{\prime})  \]\\
+\vspace{2cm}
+}
+\end{frame}
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 2:}\\
+Probability that \textbf{neither} hit the target (i.e both A and B miss the target): 
+\[P(A^{\prime} \cap B^{\prime}) = P(A^{\prime}) \times P(B^{\prime})  \]\\
+\[P(A^{\prime} \cap B^{\prime}) \hspace{0.5cm}= {2 \over 3} \times {4 \over 5} \hspace{0.5cm}  = {2 \times 4 \over 3 \times 5} \hspace{0.5cm} = {8 \over 15}  \]
+
+}
+\end{frame}
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 2:}\\
+Probability that \textbf{neither} hit the target (i.e both A and B miss the target): 
+\[P(A^{\prime} \cap B^{\prime}) = P(A^{\prime}) \times P(B^{\prime})  \]\\
+\[P(A^{\prime} \cap B^{\prime}) \hspace{0.5cm}= {2 \over 3} \times {4 \over 5} \hspace{0.5cm}  = {2 \times 4 \over 3 \times 5} \hspace{0.5cm} = {8 \over 15}  \]
+\[P(A^{\prime} \cap B^{\prime}) = {8 \over 15} \]\\
+}
+\end{frame}
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 3:}\\
+Probability that \textbf{only one} person hits the target:
+
+This is the union of two events:
+\begin{itemize}
+\item[1]  $A$ hits the target, but B misses,
+\item[2]  $B$ hits the target, but A misses.
+\end{itemize}
+
+}
+\end{frame}
+
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 3:}\\
+Probability that \textbf{only one} person hits the target:
+\\ \bigskip
+This is the union of two events:
+\begin{itemize}
+\item[ 1]  $A$ hits the target, but B misses,
+\item[ 2]  $B$ hits the target, but A misses.
+\end{itemize}
+
+\bigskip
+% Probability that \textbf{only one} person hits the target:
+\[P(A \cap B^{\prime})+ P(A^{\prime} \cap B)\]
+}
+\end{frame}
+
+
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 3:}\\
+Probability that \textbf{only one} person hits the target:
+
+% Probability that \textbf{only one} person hits the target:
+\[P(A \cap B^{\prime})+ P(A^{\prime} \cap B)\]
+\begin{itemize}
+\item[1] Only $A$ hits the target: \[P(A \cap B^{\prime}) = \frac{1}{3} \times \frac{4}{5} = \frac{4}{15} \]
+\end{itemize}
+}
+\end{frame}
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 3:}\\
+Probability that \textbf{only one} person hits the target:
+
+% Probability that \textbf{only one} person hits the target:
+\[P(A \cap B^{\prime})+ P(A^{\prime} \cap B)\]
+\begin{itemize}
+\item[1] Only $A$ hits the target: \[P(A \cap B^{\prime}) = \frac{1}{3} \times \frac{4}{5} = \frac{4}{15} \]
+\item[2] Only $B$ hits the target:  \[P(A^{\prime} \cap B) = \frac{2}{3} \times \frac{1}{5} = \frac{2}{15} \]
+\end{itemize}
+}
+\end{frame}
+%-------------------------------------------------%
+\begin{frame}
+\Large{
+\frametitle{Probability}
+\textbf{Question 3:}\\
+Probability that \textbf{only one} person hits the target:
+
+% Probability that \textbf{only one} person hits the target:
+\[P(A \cap B^{\prime})+ P(A^{\prime} \cap B)\]
+\[=\frac{4}{15}+ \frac{2}{15}  \hspace{0.5cm}\]\[= {\Huge \frac{6}{15}}\]
+
+}
+\end{frame}
+%-------------------------------------------------%
+\end{document}

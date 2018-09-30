@@ -1,0 +1,90 @@
+\begin{frame}
+
+A college teaches courses in mathematics, computing and statistics,
+Students choose a range of courses from these three subject areas. 
+
+Currently 600
+students are enrolled of whom 300 study mathematics courses, 120 study statistics
+and 380 study computing courses. 
+
+\end{frame}
+%-------------------------------------------------------------%
+\begin{frame}
+\begin{itemize}
+\item 40 students study courses from all three subject
+areas. \item 200 mathematics students study computing as well. \%
+item 60 computing students
+also study statistics\item 70 statistics students also study mathematics.
+\end{itemize}
+\end{frame}
+
+
+%-------------------------------------------------------------%
+\begin{frame}Let the subject areas be represented by the letters M for mathematics, C for
+computing and S for statistics. Draw a labelled Venn diagram showing the
+areas M, C, and S in such a way as to represent the students studying at
+the college. On your diagram show the number of students studying in each
+region of the Venn diagram. 
+\end{frame}
+
+
+% Transition 1: Empty
+
+%-------------------------------------------------------------%
+\begin{frame}
+\frametitle{Step 1}
+{\Large
+40 students study courses from all three subject.
+}
+\end{frame}
+
+% Transition 2: Empty
+%-------------------------------------------------------------%
+\begin{frame}
+\frametitle{Step 2}
+{\Large
+200 mathematics students study computing as well.
+
+\begin{itemize}
+\item 40 study statistics as well (step 1).
+\item 160 study maths and computing only.
+\end{itemize
+}
+\end{frame}
+
+% Transition 3: Empty
+%-------------------------------------------------------------%
+\begin{frame}
+\frametitle{Step 3}
+{\Large
+60 computing students also study statistics.
+
+\begin{itemize}
+\item 40 study mathematics as well (step 1).
+\item 20 study statistics and computing only.
+\end{itemize
+}
+\end{frame}
+
+% Transition 4: Empty
+%-------------------------------------------------------------%
+\begin{frame}
+\frametitle{Step 4}
+{\Large
+70 statistics students also study mathematics.
+
+\begin{itemize}
+\item 40 study computing as well (step 1).
+\item 30 study statistics and mathematics only.
+\end{itemize
+}
+\end{frame}
+
+% Transition 5: Empty
+%-------------------------------------------------------------%
+\begin{frame}
+(i) How many students study none of these courses at all?
+(ii) How many students study mathematics but not computing or statistics?
+(iii) How many students study courses from precisely two of these subject
+areas?
+\end{frame}
